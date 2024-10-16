@@ -9,7 +9,7 @@ const Navbar = () => {
       <h2 className="text-xl font-medium text-black py-2"> MemoMate</h2>
 
       <div className="flex-grow flex justify-center space-x-6">
-        <h2 className="text-xl font-medium text-black py-2">About</h2>
+        <h2 className="text-xl font-medium text-black py-2">About Us</h2>
         <h2 className="text-xl font-medium text-black py-2">FAQs</h2>
       </div>
 

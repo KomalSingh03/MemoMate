@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(
     cors({
-        origin:"http://localhost:8000",
+        origin:"*",
     })
 );
 
@@ -111,7 +111,7 @@ app.post("/login" , async(req,res)=>{
 })
 
 //get User
-app.post("/get-user", authenticateToken , async(req,res)=>{
+app.get("/get-user", authenticateToken , async(req,res)=>{
     const {user}= req.user;
 
     const isUser = await User.findOne({_id:user._id});

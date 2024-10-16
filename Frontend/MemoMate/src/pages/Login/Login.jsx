@@ -35,12 +35,12 @@ const Login = () => {
 
       //handle successfull login response
       if(response.data && response.data.accessToken){
-        localStorage.setItem("token" , response.data.accessToken)
+        localStorage.setItem("token" , response.data.accessToken);
         navigate("/dashboard");
       }
     }catch(error){
       //handle login error
-      //console.error("Login error response:", error.response);  // Add this
+      // console.error("Login error response:", error.response);  // Add this
 
       if(error.response && error.response.data && error.response.data.message){
         setError(error.response.data.message);
